@@ -151,6 +151,43 @@ body {
   line-height: 27px;
 }
 
+.education {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.education__title {
+  font-weight: 900;
+  font-size: 54px;
+  color: #fff;
+}
+
+.education__placename {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.education__duration {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.education__li {
+  color: #fff;
+  margin-bottom: 70px;
+}
+
+.education__li::marker {
+  color: #fff;
+  font-size: 3rem;
+}
+
 .footer__line {
   margin: 0 auto;
   max-width: 1280px;
