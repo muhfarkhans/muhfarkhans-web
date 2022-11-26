@@ -218,6 +218,7 @@ body {
 }
 
 .contact {
+  margin: 0 auto;
   max-width: 700px;
 }
 
@@ -290,6 +291,10 @@ body {
   padding: 20px 50px;
   border-radius: 10px;
   border: none;
+}
+
+.contact__buttonwrapper {
+  margin-bottom: 40px;
 }
 
 .contact__button:hover {
