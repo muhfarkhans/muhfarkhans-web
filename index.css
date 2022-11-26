@@ -217,6 +217,90 @@ body {
   font-size: 3rem;
 }
 
+.contact {
+  max-width: 700px;
+}
+
+.contact__title {
+  font-weight: 900;
+  font-size: 54px;
+  color: #fff;
+}
+
+.contact__p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #fff;
+}
+
+.contact__a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact__a:hover {
+  color: #00acd7;
+  text-decoration: none;
+}
+
+.contact__label {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact__inputarea {
+  display: flex;
+  margin-bottom: 40px;
+  gap: 50px;
+}
+
+.contact__inputwrapper {
+  width: 50%;
+}
+
+.contact__textareawrapper {
+  margin-bottom: 40px;
+}
+
+.contact__input {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 5px;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.contact__textarea {
+  font-size: 20px;
+  padding-left: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact__button {
+  background-color: #00acd7;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+.contact__button:hover {
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .footer__line {
   margin: 0 auto;
   max-width: 1280px;
