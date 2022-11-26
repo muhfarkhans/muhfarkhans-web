@@ -1,0 +1,160 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  background-color: #1f2833;
+}
+
+.header {
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.nav__link {
+  font-weight: 900;
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__title {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  font-weight: 900;
+  font-size: 42px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav__link--mobile {
+  display: none;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.content__home-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1280px;
+}
+
+.content__home-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.content__home-banner-image {
+  max-width: 600px;
+  max-height: 630px;
+  border-radius: 44px;
+  width: 100%;
+}
+
+.content__home-description {
+  width: 50%;
+}
+
+.content__home-description-p {
+  font-weight: 800;
+  font-size: 18px;
+  color: #fff;
+}
+
+.content__about-container {
+  max-width: 700px;
+}
+
+.content__title {
+  font-weight: 900;
+  font-size: 54px;
+  color: #fff;
+}
+
+.content__p {
+  color: #fff;
+}
+
+.content__p--tight {
+  margin: 0;
+}
+
+.footer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer__line {
+  margin: 0 auto;
+  max-width: 1280px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.footer__p {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav__title {
+    display: none;
+  }
+
+  .nav__link--mobile {
+    display: inline;
+  }
+
+  .content__home-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content__title {
+    font-weight: 900;
+    font-size: 32px;
+    color: #fff;
+    overflow-wrap: break-word;
+  }
+
+  .content__home-svg {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content__title {
+    font-weight: 900;
+    font-size: 24px;
+    color: #fff;
+    overflow-wrap: break-word;
+  }
+
+  .content__home-svg {
+    width: 100%;
+  }
+}
