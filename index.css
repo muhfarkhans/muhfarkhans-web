@@ -146,6 +146,26 @@ body {
   line-height: 27px;
 }
 
+.about__button {
+  background-color: #00acd7;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  border: none;
+}
+
+.about__button:hover {
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .portofolio {
   margin: 0 auto;
   max-width: 700px;
