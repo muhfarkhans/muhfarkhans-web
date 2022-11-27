@@ -30,6 +30,11 @@ body {
   text-decoration: none;
 }
 
+.nav__active {
+  margin-left: 2px;
+  position: absolute;
+}
+
 .nav__title {
   display: inline-block;
   width: 50%;
@@ -384,18 +389,10 @@ body {
   }
 
   .nav__title {
-    display: none;
-  }
-
-  .nav__link--mobile {
-    display: inline;
-  }
-
-  .content__home-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
   }
 }
 
