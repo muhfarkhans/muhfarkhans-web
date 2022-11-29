@@ -343,6 +343,124 @@ body {
   color: #fff;
 }
 
+.home__iconwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.home__iconbutton {
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1;
+  border: 1 solid white;
+  padding: 20px 30px;
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.home__iconbrandname {
+  font-size: 18px;
+  color: #1f2833;
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.home__iconbutton--twitter:hover,
+.home__iconbutton--twitter:focus {
+  color: #1da1f2;
+  background: white;
+  border-color: white;
+}
+
+.home__iconbutton--twitter:hover > .home__iconbrandname,
+.home__iconbutton--twitter:focus > .home__iconbrandname {
+  opacity: 100%;
+  transform: translateX(5px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.home__iconbutton--twitter:hover > .svg-icon,
+.home__iconbutton--twitter:focus > .svg-icon {
+  transform: translateX(-5px);
+  transition: transform 0.5s;
+}
+
+.home__iconbutton--youtube:hover,
+.home__iconbutton--youtube:focus {
+  color: red;
+  background: white;
+  border-color: white;
+}
+
+.home__iconbutton--youtube:hover > .home__iconbrandname,
+.home__iconbutton--youtube:focus > .home__iconbrandname {
+  opacity: 100%;
+  transform: translateX(5px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.home__iconbutton--youtube:hover > .svg-icon,
+.home__iconbutton--youtube:focus > .svg-icon {
+  transform: translateX(-5px);
+  transition: transform 0.5s;
+}
+
+.home__iconbutton--telegram:hover,
+.home__iconbutton--telegram:focus {
+  color: #2aabee;
+  background: white;
+  border-color: white;
+}
+
+.home__iconbutton--telegram:hover > .home__iconbrandname,
+.home__iconbutton--telegram:focus > .home__iconbrandname {
+  opacity: 100%;
+  transform: translateX(5px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.home__iconbutton--telegram:hover > .svg-icon,
+.home__iconbutton--telegram:focus > .svg-icon {
+  transform: translateX(-5px);
+  transition: transform 0.5s;
+}
+
+.home__iconbutton--linkedln:hover,
+.home__iconbutton--linkedln:focus {
+  color: #0a66c2;
+  background: white;
+  border-color: white;
+}
+
+.home__iconbutton--linkedln:hover > .home__iconbrandname,
+.home__iconbutton--linkedln:focus > .home__iconbrandname {
+  opacity: 100%;
+  transform: translateX(5px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.home__iconbutton--linkedln:hover > .svg-icon,
+.home__iconbutton--linkedln:focus > .svg-icon {
+  transform: translateX(-5px);
+  transition: transform 0.5s;
+}
+
+.svg-icon {
+  transform: translateX(30px);
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  transition: fill 0.2s;
+}
+
 @media screen and (max-width: 900px) {
   .nav {
     flex-direction: column;
@@ -368,6 +486,13 @@ body {
     font-weight: 900;
     font-size: 32px;
     color: #fff;
+  }
+
+  .home__iconwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
   }
 }
 
