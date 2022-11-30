@@ -72,6 +72,7 @@ body {
 
 .home__descwrapper {
   width: 50%;
+  padding: 5px;
 }
 
 .home__p {
@@ -373,42 +374,22 @@ body {
   opacity: 0;
 }
 
-.home__iconbutton--twitter:hover,
-.home__iconbutton--twitter:focus {
-  color: #1da1f2;
+.home__iconbutton--github:hover,
+.home__iconbutton--github:focus {
+  color: #333;
   background: white;
   border-color: white;
 }
 
-.home__iconbutton--twitter:hover > .home__iconbrandname,
-.home__iconbutton--twitter:focus > .home__iconbrandname {
+.home__iconbutton--github:hover > .home__iconbrandname,
+.home__iconbutton--github:focus > .home__iconbrandname {
   opacity: 100%;
   transform: translateX(5px);
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.home__iconbutton--twitter:hover > .svg-icon,
-.home__iconbutton--twitter:focus > .svg-icon {
-  transform: translateX(-5px);
-  transition: transform 0.5s;
-}
-
-.home__iconbutton--youtube:hover,
-.home__iconbutton--youtube:focus {
-  color: red;
-  background: white;
-  border-color: white;
-}
-
-.home__iconbutton--youtube:hover > .home__iconbrandname,
-.home__iconbutton--youtube:focus > .home__iconbrandname {
-  opacity: 100%;
-  transform: translateX(5px);
-  transition: transform 0.5s, opacity 0.5s;
-}
-
-.home__iconbutton--youtube:hover > .svg-icon,
-.home__iconbutton--youtube:focus > .svg-icon {
+.home__iconbutton--github:hover > .svg__icon,
+.home__iconbutton--github:focus > .svg__icon {
   transform: translateX(-5px);
   transition: transform 0.5s;
 }
@@ -427,8 +408,8 @@ body {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.home__iconbutton--telegram:hover > .svg-icon,
-.home__iconbutton--telegram:focus > .svg-icon {
+.home__iconbutton--telegram:hover > .svg__icon,
+.home__iconbutton--telegram:focus > .svg__icon {
   transform: translateX(-5px);
   transition: transform 0.5s;
 }
@@ -447,18 +428,32 @@ body {
   transition: transform 0.5s, opacity 0.5s;
 }
 
-.home__iconbutton--linkedln:hover > .svg-icon,
-.home__iconbutton--linkedln:focus > .svg-icon {
+.home__iconbutton--linkedln:hover > .svg__icon,
+.home__iconbutton--linkedln:focus > .svg__icon {
   transform: translateX(-5px);
   transition: transform 0.5s;
 }
 
-.svg-icon {
-  transform: translateX(30px);
+.svg__icon {
+  transform: translateX(40px);
   height: 1em;
   width: 1em;
   fill: currentColor;
   transition: fill 0.2s;
+}
+
+.home__iconanchor {
+  width: 100%;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1025px) {
+  .home__iconwrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -467,6 +462,7 @@ body {
   }
 
   .nav__title {
+    width: auto;
     font-weight: 900;
     font-size: 20px;
     color: #fff;
@@ -488,11 +484,20 @@ body {
     color: #fff;
   }
 
-  .home__iconwrapper {
+  .contact__inputarea {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    margin-bottom: 40px;
+    gap: 50px;
+  }
+
+  .contact__inputwrapper {
+    width: 90%;
+  }
+
+  .contact__textareawrapper {
+    width: 90%;
+    margin-bottom: 40px;
   }
 }
 
